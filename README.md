@@ -99,4 +99,6 @@
    проходит линтинг и сборку перед деплоем.
 3. Если все шаги прошли успешно, собранная продакшн версия файлов проекта
    отправляется в ветку `gh-pages`. В противном случае, в логе выполнения
-   скрипта будет указано в чем проблема.
+   скрипта будет указано в чем проблема. git remote add
+   originhttps://github.com/VladaBoiko/goit-react-hw-01-components.git origin
+   https://github.com/VladaBoiko/goit-react-hw-01-components.git (fetch)
