@@ -1,4 +1,3 @@
-// import user from '../../json/user';
 import PropTypes from 'prop-types';
 import {
   Profile,
@@ -21,7 +20,7 @@ export const ProfileCard = ({
   stats: { followers, views, likes },
 }) => {
   return (
-    <Profile>
+    <Profile key={tag}>
       <Description>
         <Avatar src={avatar} alt="User avatar" />
         <Name>{username}</Name>
