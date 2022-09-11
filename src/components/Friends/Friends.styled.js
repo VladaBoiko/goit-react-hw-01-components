@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 export const FriendsList = styled.ul`
-  background-color: rgb(194, 194, 194);
+  background-color: rgb(229, 226, 226);
   margin: 50px;
   margin-left: 0;
   padding: 0;
