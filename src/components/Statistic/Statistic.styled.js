@@ -12,23 +12,25 @@ export const Title = styled.h2`
   text-align: center;
 `;
 export const StatList = styled.ul`
+  display: flex;
+  justify-content: space-between;
   background-color: rgb(194, 194, 194);
   margin: 0;
   padding: 0;
   list-style: none;
-  &:not(:last-child) {
-    border-right: 1px solid #000;
-  }
+  width: 100%;
 `;
 export const Item = styled.li`
   margin: 0;
-  justify-content: center;
   align-items: center;
   text-align: center;
   color: rgb(75, 73, 73);
   font-size: 15px;
-  /* border-right: 1px solid #000; */
   padding: 10px;
+  flex-basis: 20%;
+  &:not(:last-child) {
+    border-right: 1px solid #000;
+  }
 `;
 export const Label = styled.span`
   display: flex;

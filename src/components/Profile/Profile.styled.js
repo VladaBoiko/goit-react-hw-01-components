@@ -34,7 +34,7 @@ export const Location = styled.p`
 export const Stats = styled.ul`
   background-color: rgb(194, 194, 194);
   display: flex;
-  justify-content: center;
+  /* justify-content: space-evenly; */
 
   border-top: 1px solid black;
   margin: 0;
@@ -44,6 +44,7 @@ export const Stats = styled.ul`
 export const Label = styled.span`
   display: flex;
   flex-direction: column;
+  justify-content: center;
   color: rgb(41, 38, 54);
   font-size: 20px;
 `;
@@ -58,9 +59,14 @@ export const Quantity = styled.span`
 export const StatsItem = styled.li`
   padding: 10px;
   margin: 0;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   color: rgb(75, 73, 73);
   font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-basis: 33%;
+  &:not(:last-child) {
+    border-right: 1px solid black;
+  }
 `;

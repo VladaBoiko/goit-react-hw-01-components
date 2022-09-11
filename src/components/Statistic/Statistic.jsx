@@ -13,16 +13,16 @@ export const StatCard = ({ title, stats }) => {
     <Box>
       {title && <Title>{title}</Title>}
       <Statistics>
-        {stats.map(stat => {
-          return (
-            <StatList key={stat.id}>
-              <Item>
+        <StatList>
+          {stats.map(stat => {
+            return (
+              <Item key={stat.id}>
                 <Label>{stat.label}</Label>
                 <Percentage>{stat.percentage}</Percentage>
               </Item>
-            </StatList>
-          );
-        })}{' '}
+            );
+          })}{' '}
+        </StatList>
       </Statistics>
     </Box>
   );
