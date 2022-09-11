@@ -14,7 +14,6 @@ export const StatCard = ({ title, stats }) => {
       {title && <Title>{title}</Title>}
       <Statistics>
         {stats.map(stat => {
-          console.log(stat.id);
           return (
             <StatList key={stat.id}>
               <Item>

@@ -53,4 +53,5 @@ export const Box = styled.div`
   background-color: rgb(229, 226, 226);
   display: flex;
   flex-direction: column;
+  width: 100%;
 `;
